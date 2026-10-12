@@ -130,3 +130,10 @@ match operator:
 
 
         
+a =  {
+    "jumlah" : lambda x,y : x + y,
+    "kurang" : lambda x,y : x - y
+}
+
+for i, j in a.items():
+    print(f"{i} hasil: {j(1, 1)}")
